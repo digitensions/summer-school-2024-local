@@ -21,7 +21,9 @@
 
 class: center, middle
 
-# Your Workflow & the GitHub Platform
+---
+
+## CLI & FFMPEG Training
 
 ???
 
@@ -38,19 +40,66 @@ Notes for the _first_ slide!
 5. FFprobe, FFplay and Filters
 
 ---
-
-# Introduction to the CLI
+# 1: Introduction to the CLI
 
 ![](https://github.com/digitensions/summer-school-2024/tuesday/images/Parrot.gif)  
 ![](https://github.com/digitensions/summer-school-2024/tuesday/images/train.gif)  
+
+???
+
+CLI - Command Line Interface
+- A text only window in a GUI (Graphical User Interface) which is emulating a console  
+- It receives commands from you, which it translates and relates to the computer  
+- The command interpreter makes this translation, and is referred to as a 'shell'. This shell's primary function is to read commands as they are typed into the CLI, translate and execute (or run) them.  
+- Terminal for MacOS and Linux (UNIX systems) use BASH, or Born Again Shell, or ZSH the later Z Shell which is an extended version of BASH.
+- Windows uses Command Shell or PowerShell
+- BFI use SHELL continuously with 'headless' servers which are located in the National Archive but accessed remotely using SSH (Secure Socket Shell protocol) to establish encrypted connections for remote comms between computers. Uses client/server model, keeping transmissions privates. 
+
+---
+# Shortcut to launch Terminal or Windows Command Prompt
+
+![](https://github.com/digitensions/summer-school-2024/tuesday/images/launch_cli.png)
+
+???
+
+Window Command Prompt:
+Click STart
+In search programmes and files, type 'cmd' or 'powershell'
+Hit enter and it will load
+
+MacOS:
+Press Command + spacebar to load search
+Type 'terminal' and it launches
+
+Linux
+Control + ALT + T
+Opens terminal automatically (maybe just Ubuntu)
+
+---
+# CLI commands
+
+![](https://github.com/digitensions/summer-school-2024/tuesday/images/bash_cli_commands.png)
+
+???
+If you have your terminals open, then let’s try some commands. Be careful with mistyping commands, it’s unlikely anything will happen except cause frustration! Any gaps are only one space character, and mostly all commands are lower case. When you create files or folders it is best not to use spaces in your file naming, but instead use underscores for example: folder_1/file_name_like_this.txt
 
 ---
 
 # UNIX on Windows
 
+![](https://github.com/digitensions/summer-school-2024/tuesday/images/Ubuntu_on_Windows_10_-_bash.png)
+By Canonical, Ltd., Microsoft - Screenshot, GPL, https://commons.wikimedia.org/w/index.php?curid=70653741
+???
+
+If you’re a Windows 10 user you can install an app called Windows Terminal, and this will allow you to access the Windows Subsystem for Linux which comes installed. This will let you have access to some really excellent Linux tools, and there are lots, but also possibly install software only available for Unix systems (ie, Linux and Mac) such as AMIA’s vrecord.
+
 ---
 
 # Born Again SHell (BASH) scripting
+
+???
+- I'll be using BASH for our demonstrations today.
+- My installations of FFmpeg and Brew haven't yet been updated for ZSH, so if you are running ZSH you can return it to bash with this command
 
 ---
 
